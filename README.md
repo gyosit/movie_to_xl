@@ -6,6 +6,7 @@
 1. Excelを開き、play_excel.pyのEX_TITLEを開いたExcelのタイトル (book1など)にする。
 1. SH_TITLEを開いたExcelの任意のシート名 (sheet1など)にする。
 1. MOVIE_TITLEを再生したい動画のパスにする。
+1. シートのセル全体に適当なカラースケールで条件付き書式を設定する。
 1. プログラムを実行する。
 
 # コツ
