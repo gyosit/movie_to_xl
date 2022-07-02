@@ -5,7 +5,7 @@ if __name__ == "__main__":
     LENGTH = 10 # 行の高さ・列の幅
     HEIGHT_COL_RATIO = 10 # 列幅は行高の1/10くらいだと正方形に見える
     SIZE_RATIO = 10 # 画像サイズの縮小率
-    FRAME_RATE = 10 # 描画するフレームの割合 (大きいほどカクつくが再生速度は遅くなる)
+    FRAME_GAP = 10 # 描画するフレームの間隔 (大きいほどカクつくが再生速度は遅くなる)
 
     EX_TITLE = "book1" # 書き込み先のエクセルのタイトル (あらかじめ開いておく)
     SH_TITLE = "sheet1" # 書き込み先のシート名
@@ -36,7 +36,7 @@ if __name__ == "__main__":
         
         i += 1
 
-        if i % FRAME_RATE != 0:
+        if i % FRAME_GAP != 0:
             continue
 
         img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
